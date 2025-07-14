@@ -8,6 +8,7 @@ import Home from './pages/home'
 import Dashboard from './pages/dashboard'
 import Employeeform from './pages/employee'
 import EmployeeCard from './components/employees/employeecard'
+import ProtectedRRoute from './components/utils/protectedRoute'
 
 function App() {
   const[count,setCount]=useState(0)
@@ -15,7 +16,9 @@ function App() {
     <>
      <Routes>
       <Route path="/" element={<LoginForm />} /><Route/>
-      <Route path="Home" element ={<Home/>}>
+
+      <Route path="Home" element ={
+        <ProtectedRRoute><Home/></ProtectedRRoute>}>
       <Route path="dashboard" element={<Dashboard/>}/>
       <Route path="employee" element={<Employeeform/>}/>
       </Route>
