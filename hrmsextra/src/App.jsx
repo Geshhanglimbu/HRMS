@@ -20,7 +20,9 @@ function App() {
       <Route path="Home" element ={
         <ProtectedRRoute><Home/></ProtectedRRoute>}>
       <Route path="dashboard" element={<Dashboard/>}/>
-      <Route path="employee" element={<Employeeform/>}/>
+      <Route path="employee" 
+      element={<ProtectedRRoute allowedRoles={["hr","manager","admin"]}>
+        <Employeeform/></ProtectedRRoute>}/>
       </Route>
 
      </Routes>
