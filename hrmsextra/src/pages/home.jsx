@@ -2,7 +2,6 @@ import { Outlet } from "react-router-dom";
 import Topbar from "../components/home/topbar";
 import Sidebar from "../components/home/sidebar";
 
-
 export default function Home() {
     return (
         <div className="flex flex-col h-screen">
