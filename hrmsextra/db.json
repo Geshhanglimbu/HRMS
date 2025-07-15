@@ -32,6 +32,28 @@
       "password": "1234",
       "date": "2025-07-11",
       "id": "ace4"
+    },
+    {
+      "id": "0223",
+      "name": "employee",
+      "email": "employee@gmail.com",
+      "department": "marketing",
+      "designation": "senior",
+      "userType": "employee",
+      "salary": "10000",
+      "password": "12345",
+      "date": "2025-07-15"
+    },
+    {
+      "id": "0643",
+      "name": "hr",
+      "email": "hr@gmail.com",
+      "department": "marketing",
+      "designation": "senior",
+      "userType": "hr",
+      "salary": "500000",
+      "password": "12345",
+      "date": "2025-07-15"
     }
   ]
 }
