@@ -8,9 +8,11 @@ export default function LogoutButton() {
     };
     return(
         <button
+        type="button"
+        
         onClick={handleLogout}
-        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
-            
+        className="bg-red-500 hover:bg-red-700 text-white text-sm font-bold py-2 px-4 rounded-2xl">
+            logout
         </button>
     )
 }
